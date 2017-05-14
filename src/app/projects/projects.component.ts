@@ -3,11 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from './project.model';
 
 import { ProjectsService } from './projects.service';
+import {markedStateTrigger} from '../project/animations';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  animations: [
+    markedStateTrigger
+  ]
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[];

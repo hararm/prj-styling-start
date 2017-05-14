@@ -4,7 +4,7 @@
 
 .marked {
   border: solid 2px blue;
-  animation: marked 0.5s ease-out forwards;
+  /*animation: marked 0.5s ease-out forwards;*/
 }
 
 @keyframes marked {
